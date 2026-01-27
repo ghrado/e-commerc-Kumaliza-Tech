@@ -1,6 +1,7 @@
 import React from 'react'
 import {IoMdSearch} from 'react-icons/io'
-import {FaCartShopping} from 'react-icons/fa'
+import {FaCartShopping} from 'react-icons/fa6'
+import DarkMode from './DarkMode';
 
 const MenuLinks = [
     {
@@ -41,7 +42,7 @@ const Navbar = () => {
                         KumalizaShop
                     </a>
                     {/* Menu itens*/}
-                     <div className=' lg:block'>
+                     <div className='hidden lg:block'>
                         <ul className='flex items-center gap-4'>
                             {
                                 MenuLinks.map((data, index) => (
@@ -80,11 +81,17 @@ const Navbar = () => {
                     </div>
 
                     {/*order-button section*/}
-                    <button>
-                        <FaCartShopping/>
+                    <button className='relative p-3'>
+                        <FaCartShopping className='text-xl text-gray-600 
+                        dark:text-gray-400'/>
+                        <div className='w-4 bg-red-500 text-white 
+                        rounded-full absolute top-0 right-0 flex
+                        items-center justify-center text-xs'>4</div>
                     </button>
                     {/*Dark Mode seaction*/}
-                    <div></div>
+                    <div>
+                        <DarkMode/>
+                    </div>
                 </div>
             </div>
         </div>
