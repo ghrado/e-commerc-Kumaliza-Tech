@@ -4,10 +4,6 @@
 
 @layer components {
   .search-bar {
-    @apply w-0 group-houver:w-[300px] transition-all duration-300
-    rounded-full group-houver:border group-houver:border-gray-500
-    px-3 py-1 focus:outline-none focus: border-1
-    dark:border-gray-800 dark:border-gray-900
-    group-houver:dark:border-gray-800;
+    @apply w-0 group-hover:w-[300px] transition-all duration-300 rounded-full group-hover:border group-hover:border-gray-500 px-3 py-1 focus:outline-none dark:border-gray-800 dark:border-gray-900 group-hover:dark:border-gray-800;
   }
 }
