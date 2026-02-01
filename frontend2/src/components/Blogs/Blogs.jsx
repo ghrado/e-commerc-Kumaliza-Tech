@@ -31,7 +31,7 @@ const BlogData = [
 
 const Blogs = () => {
   return (
-    <div>
+    <div className='my-12'>
         <div className="container">
             {/* Heading Section */}
             <Heading title="Recent News" subtitle="Explore Our Blogs" />
@@ -42,16 +42,21 @@ const Blogs = () => {
                 {/*Blog Card*/}
                 {
                     BlogData.map((data) => (
-                        <div>
+                        <div key={data.title} className='bg-white dark:bg-gray-900'>
                             {/*image section*/}
-                            <div>
-                                <img src={data.image} />
+                            <div className='overflow-hidden rounded-2xl mb-2'>
+                                <img src={data.image} 
+                                className='w-full h-[220px] object-cover
+                                rounded-2xl hover:scale-105 duration-500'
+                                />
                             </div>
                             {/*content section*/}
-                            <div >
-                                <p>{data.published}</p>
-                                <p>{data.title}</p>
-                                <p>{data.subtitle}</p>
+                            <div className='space-y-2'>
+                                <p className='text-xs text-gray-500'>{data.published}</p>
+                                <p className='font-bold line-clamp-1'>{data.title}</p>
+                                <p className='line-clamp-2 text-sm text-gray-600
+                                dark:text-gray-400'>
+                                    {data.subtitle}</p>
                             </div>
                         </div>
                     ))

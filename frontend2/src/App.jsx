@@ -5,11 +5,13 @@ import Category from "./components/Category/Category.jsx";
 import Category2 from "./components/Category/Category2.jsx";
 import Services from "./assets/Services/Services.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Partners from "./components/Partners/Partners.jsx";
 import Products from "./components/Products/Products.jsx";
 
 import headphone from './assets/hero/headphone.png';
 import smartwatch2 from '/home/ghrado/Documents/ghKali/frontend2/src/assets/category/smartwatch2.png';
 import Blogs from "./components/Blogs/Blogs.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const BannerData = {
   discount: '30% OFF',
@@ -44,6 +46,8 @@ const App = () => {
     <Products/>
     <Banner data={BannerData2} />
     <Blogs/>
+    <Partners/>
+    <Footer/>
   </div>;
 };
 
