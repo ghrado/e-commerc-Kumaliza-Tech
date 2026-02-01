@@ -41,6 +41,36 @@ const ProductsData = [
             aosDelay: '600',
     },
 ]
+const ProductsData2 = [
+    {
+       id: 1,
+       img: Img5,
+       title: 'Best Headphone', 
+       price: '9500.00 MT',
+       aosDelay: '0',
+    },
+    {
+         id: 2,
+         img: Img5,
+         title: 'Rocky Montain',
+         price: '2500.00 MT',
+         aosDelay: '200',
+    },
+    {
+            id: 3,
+            img: Img6,
+            title: 'Goggles',
+            price: '15000.00 MT',
+            aosDelay: '400',
+    },
+    {
+            id: 4,
+            img: Img7,
+            title: 'printed',
+            price: '1500.00 MT',
+            aosDelay: '600',
+    },
+]
 
 const Products = () => {
   return (
@@ -50,6 +80,7 @@ const Products = () => {
             <Heading title="Featured Products" subtitle="Discover our most popular products" />
              {/* body Section */}
              <ProdutCard data={ProductsData}/>
+             <ProdutCard data={ProductsData2}/>
         </div>
     </div>
   )
